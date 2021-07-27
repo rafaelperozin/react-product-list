@@ -1,0 +1,43 @@
+.list-item {
+  list-style: none;
+  padding: .5rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  position: relative;
+
+  &:hover {
+    border-color: #333;
+    cursor: pointer;
+  }
+
+  .list-item__title {
+    font-size: 1.125rem;
+  }
+
+  .list-item__description {
+    font-size: 1rem;
+  }
+
+  .list-item__flag {
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    width: 40px;
+    padding: .1rem .3rem;
+    border-radius: 5px 0 0 5px;
+
+    &--free {
+      background-color: red;
+    }
+
+    &--new {
+      background-color: blue;
+    }
+  }
+
+  .list-item__flag-text {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+}
